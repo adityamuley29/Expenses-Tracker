@@ -1,0 +1,36 @@
+.AddItem-Controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+}
+.AddItem-Controls .AddItem-contral {
+  position: relative;
+  padding: 10px;
+  margin: 10px 10px;
+  min-height: 50px;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.AddItem-Controls .AddItem-contral input {
+  height: 20px;
+}
+.AddItem-Controls .AddItem-actions button {
+  font-weight: bold;
+  border: 2px solid #393e46;
+  color: #393e46;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  background: none;
+  padding: 10px 20px;
+}
+.AddItem-Controls .AddItem-actions button:hover {
+  cursor: pointer;
+  background-color: #393e46;
+  color: white;
+  transition: 0.2s;
+}

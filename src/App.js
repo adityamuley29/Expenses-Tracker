@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Wrapper from "./components/UI/Wrapper";
+import "./App.css";
+import AddItem from "./components/UI/AddItem";
+import Heading from "./components/UI/Heading";
+
+const Initial_Data = [
+  
+];
 
 function App() {
+  const [item, setItem] = useState(Initial_Data);
+  const addDataHandler = (respondItem) => {
+    setItem((prevItem) => {
+      return setItem([respondItem, ...prevItem]);
+    });
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading/>
+      <AddItem DataToArray={addDataHandler} />
+      <Wrapper data={item} />
     </div>
   );
 }
