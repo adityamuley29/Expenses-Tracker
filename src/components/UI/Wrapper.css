@@ -2,17 +2,35 @@
   position: relative;
   background-color: white;
   margin: 20px;
+  padding-bottom: 20px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-height: 60vh;
-  overflow-y:scroll;
+  overflow-y: scroll;
   width: 100vh;
   box-shadow: 2px 2px 10px rgb(202, 200, 200);
 }
 
 .wrapper::-webkit-scrollbar {
   display: none;
+}
+.error-wrapper{
+  position: relative;
+  top: 8vh;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  position: relative;
+  transition: .3s;
+  /* top: 8vh; */
+  width: 50vh;
 }

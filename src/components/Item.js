@@ -6,7 +6,7 @@ function Item(props) {
   const date = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
   return (
-    <div className="item-wrapper" key={props.id} value={props.id}>
+    <div className="item-wrapper">
       <div className="left">
         <p>
           <strong>{month}</strong>
@@ -19,7 +19,7 @@ function Item(props) {
       </div>
       <div className="right">
         <p>
-          <strong>${props.price}</strong>
+          <strong>Rs.{props.price}</strong>
         </p>
       </div>
     </div>

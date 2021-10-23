@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
 }
 .App {
   width: auto;
@@ -13,6 +13,5 @@
   align-items: center;
   flex-direction: column;
   background-color: #393e46;
-  overflow-y: hidden;
-  
+  overflow: hidden;
 }
